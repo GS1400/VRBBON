@@ -107,13 +107,16 @@ for nl=1:length(levellist)
                 eval(['addpath ',solverPath,'/solvers/VRBBON'])
                 eval(['addpath ',solverPath,'/solvers/VRBBON/minq8'])
                 [~,~,info] = VRBBON(fun,x0,st,tune);
+                rmpath([solverPath,'/solvers/VRBBON'])
             case 'VRBBO'
                 eval(['addpath ',solverPath,'/solvers/VRBBO'])
                 [~,~,info] = VRBBO(fun,x0,st,tune);
+                rmpath([solverPath,'/solvers/VRBBO'])
             case 'LMMAES'
-                  eval(['addpath ',solverPath,'/solvers/LMMAES'])
-                  [~,~,~,info] = LM_MA_ES(fun,x0,st,tune);
-        end
+                eval(['addpath ',solverPath,'/solvers/LMMAES'])
+                [~,~,~,info] = LM_MA_ES(fun,x0,st,tune);
+               rmpath([solverPath,'/solvers/LMMAES'])
+         end
                 
        
             
@@ -142,6 +145,13 @@ for nl=1:length(levellist)
          
          
     end
+    
+    direc = [solverPath,'/data'];
+    if exist(direc)~=7,
+      eval(['! mkdir ',direc]);
+      disp(['missing directory ',direc,' created'])
+      ok=0;
+    end;
     
     com=['save ', solverPath,'/data/',[problemlist{pr},levelfig{nl}],'.mat;'];
     eval(com)
