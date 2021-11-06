@@ -28,7 +28,7 @@ if ~exist(solverPath, 'dir')
     return
 end
 
-eval(['addpath ',solverPath,'/minq8'])
+eval(['addpath ',solverPath,'/solvers/VRBBON/minq8'])
 eval(['addpath ',solverPath,'/fun'])
 
 
