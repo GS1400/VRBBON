@@ -85,10 +85,10 @@ else,  info.prt = -1;
 end;
 % stopping criteria
 if isfield(st,'secmax'), info.secmax=st.secmax;
-else, info.secmax=200*point.n;
+else, info.secmax=200*n;
 end;
 if isfield(st,'nfmax'), info.nfmax=st.nfmax;
-else, info.nfmax=200*point.n;
+else, info.nfmax=200*n;
 end;
 if isfield(st,'fbest'), info.fbest=st.fbest;
 else, info.fbest=-inf; 
