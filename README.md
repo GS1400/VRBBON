@@ -4,9 +4,7 @@ of a not  necessarily smooth function  of many continuous arguments. No
 gradients are needed. A limited amount of noise is tolerated. 
 
 
-
-[![DOI](https://zenodo.org/badge/424978679.svg)](https://zenodo.org/badge/latestdoi/424978679)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5650126.svg)](https://doi.org/10.5281/zenodo.5650126)
 
 
 The program was written by Morteza Kimiaei (University of Vienna). 
