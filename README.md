@@ -14,11 +14,11 @@ Please inform the author at kimiaeim83@univie.ac.at if you make
 serious use of this code. 
 
 This directory contains 
-* the Matlab source code for Version 1.0 (October 20, 2021), 
+* the Matlab source code for Version 2.0 (April 1, 2022), 
 * a driver program driverVRBBON.m showing its use, 
 * and the paper
 
-M. Kimiaei, Line search in noisy unconstrained black box optimization (2021)
+M. Kimiaei, VRBBON -- line search in noisy unconstrained black box optimization (2022)
 
 This paper describes the method implemented and some test results. 
 Please cite this paper when using this package in scientific work.
